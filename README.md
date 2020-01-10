@@ -1,7 +1,6 @@
-## One of the challenges from [Javascipt30]
+## <p align="center">One of the challenges from Javascript30 </p>
 
-Updating CSS Variables with JS
+[Updating CSS Variables with JS](https://javascript30.com/)
 
 Using this Gudetama character to demonstrate this.
 ![gudetama](hello-gudetama.gif)
-[Javascipt30]: https://javascript30.com/
