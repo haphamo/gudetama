@@ -3,4 +3,4 @@
 [Updating CSS Variables with JS](https://javascript30.com/)
 
 Using this Gudetama character to demonstrate this.
-![gudetama](hello-gudetama.gif)
+![gudetama](gudetama.gif)
