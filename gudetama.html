@@ -4,11 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel='shortcut icon' type='image/x-icon' href='./public/images/gudetama.ico' />
-  <link rel="stylesheet" href="clock.css">
+  <link rel='shortcut icon' type='image/x-icon' href='./public/images/gudetama-icon2.png' />
+  <link rel="stylesheet" href="gudetama.css">
+  <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Source+Sans+Pro&display=swap" rel="stylesheet">
   <title>Gudetama</title>
 </head>
 <body>
-  <img alt="gudetama" src="./public/images/drag-gudetama.png">
+  <h2>Updating CSS Variables with JS & <span id="gudetama-text">Gudetama</span></h2>
+
+  <div class="controls">
+    <span>
+      <label for="background-color">Background color</label> 
+      <input type="color" name="background-color" value="#ffc000">
+    </span>
+    <span>
+      <label for="translateX">Drag Gudetama</label> 
+      <input type="range" name="translateX" min="0" max="200" data-value="0" value="0">
+    </span>
+
+  </div>
+  <img alt="gudetama" src="./public/images/gudetama-2.png"/>
 </body>
+<script>
+  const inputs = document.querySelectorAll('.controls input')
+  // create a function to handle updates, listen for a change event
+  function handleUpdate() {
+    console.log(this.value)
+  }
+
+  inputs.forEach(input => input.addEventListener('change', handleUpdate))
+  inputs.forEach(input => input.addEventListener('mousemove', handleUpdate))
+
+</script>
 </html>
