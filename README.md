@@ -2,5 +2,5 @@ One of the challenges from Javascipt30
 
 Updating CSS Variables with JS
 
-I love this cartoon character Gudetama
+Using this Gudetama character to demonstrate this.
 ![gudetama](hello-gudetama.gif)
