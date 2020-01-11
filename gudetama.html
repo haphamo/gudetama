@@ -19,7 +19,7 @@
     </span>
     <span>
       <label for="translateX">Drag Gudetama</label> 
-      <input type="range" name="translateX" min="0" max="200" data-value="0" value="0">
+      <input type="range" name="transform" min="0" max="200" data-sizing="ch" value="0">
     </span>
 
   </div>
@@ -29,7 +29,9 @@
   const inputs = document.querySelectorAll('.controls input')
   // create a function to handle updates, listen for a change event
   function handleUpdate() {
-    console.log(this.value)
+    const suffix = this.dataset.sizing || ''
+    console.log(this.name, '(' + this.value + suffix + ')')
+    document.documentElement.style.setProperty(`--${this.name}`, `translateX(${this.value}` + `${suffix})`)
   }
 
   inputs.forEach(input => input.addEventListener('change', handleUpdate))

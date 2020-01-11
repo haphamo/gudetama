@@ -1,29 +1,25 @@
-body {
-  background: rgb(255, 192, 0);
+/* declaring css variables, declare them on an element, on root, it's the highest element. The values below are the default values*/
+:root {
+  --background-color: rgb(255, 192, 0);
+  --transform: translateX(0ch);
 }
 
+body {
+  background: var(--background-color);
+}
+
+img {
+  transform: var(--transform);
+}
 h2 {
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 6ch;
-  white-space: nowrap;
-  overflow: hidden;
 }
-
 
 #gudetama-text {
   font-family: 'East Sea Dokdo', cursive;
   font-size: 3ch;
-}
-
-/* declaring css variables, declare them on an element, on root, it's the highest element. The values below are the default values*/
-:root {
-  --background-color: rgb(255, 192, 0);
-}
-
-img {
-  background: var(--background-color);
-
 }
 
 .hl {
