@@ -3,4 +3,5 @@
 [Updating CSS Variables with JS](https://javascript30.com/)
 
 Using this Gudetama character to demonstrate this.
-![demo](gudemtama-gif.gif)
+
+<p align="center"> <img alt="gudetama" src="gudetama-gif.gif"></p>
