@@ -1,6 +1,7 @@
 :root {
   --background-color: #ffc000;
   --transform: translateX(-40ch);
+  --font: "Source Sans Pro", sans-serif;
 }
 
 body {
@@ -9,24 +10,39 @@ body {
 
 img {
   transform: var(--transform);
-  
 }
+
+.text-label {
+  font-family: var(--font);
+}
+
 h2 {
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--font);
   font-size: 6ch;
 }
 
 #gudetama-text {
-  font-family: 'East Sea Dokdo', cursive;
+  font-family: "East Sea Dokdo", cursive;
   font-size: 3ch;
 }
 
 .hl {
-  color: var(--background-color)
+  color: var(--background-color);
 }
 
 .controls {
   display: flex;
   justify-content: space-evenly;
+}
+
+footer {
+  text-align: center;
+  flex-shrink: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+footer .footer-text {
+  font-family: var(--font);
 }

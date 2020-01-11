@@ -13,16 +13,19 @@
   <h2>Updating CSS Variables with JS & <span id="gudetama-text">Gudetama</span></h2>
   <div class="controls">
     <span>
-      <label for="background-color">Background color</label> 
+      <label class="text-label" for="background-color">Change Background Colour</label> 
       <input type="color" name="background-color" value="#ffc000">
     </span>
     <span>
-      <label for="translateX">Drag Gudetama</label> 
+      <label class="text-label" for="translateX">Drag Gudetama!</label> 
       <input type="range" name="transform" min="-40" max="200" data-sizing="ch" value="-45">
     </span>
   </div>
-  <img alt="gudetama" src="./public/images/gudetama-2.png"/>
+  <img id="gudetama" alt="gudetama" src="./public/images/gudetama-2.png"/>
 </body>
+<footer>
+  <span class="footer-text">Created by Ha Pham </span>
+</footer>
 <script>
   const inputs = document.querySelectorAll('.controls input')
   // create a function to handle updates, listen for a change event
