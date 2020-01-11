@@ -11,7 +11,6 @@
 </head>
 <body>
   <h2>Updating CSS Variables with JS & <span id="gudetama-text">Gudetama</span></h2>
-
   <div class="controls">
     <span>
       <label for="background-color">Background color</label> 
@@ -19,9 +18,8 @@
     </span>
     <span>
       <label for="translateX">Drag Gudetama</label> 
-      <input type="range" name="transform" min="0" max="200" data-sizing="ch" value="0">
+      <input type="range" name="transform" min="-40" max="200" data-sizing="ch" value="-45">
     </span>
-
   </div>
   <img alt="gudetama" src="./public/images/gudetama-2.png"/>
 </body>
@@ -30,12 +28,13 @@
   // create a function to handle updates, listen for a change event
   function handleUpdate() {
     const suffix = this.dataset.sizing || ''
-    console.log(this.name, '(' + this.value + suffix + ')')
-    document.documentElement.style.setProperty(`--${this.name}`, `translateX(${this.value}` + `${suffix})`)
+    if (this.name === 'transform') {
+      document.documentElement.style.setProperty(`--${this.name}`, `translateX(${this.value}` + `${suffix})`)
+    } else if (this.name === 'background-color') {
+      document.documentElement.style.setProperty(`--${this.name}`, this.value)
+    }
   }
-
   inputs.forEach(input => input.addEventListener('change', handleUpdate))
   inputs.forEach(input => input.addEventListener('mousemove', handleUpdate))
-
 </script>
 </html>

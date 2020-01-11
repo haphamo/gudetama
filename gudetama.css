@@ -1,7 +1,7 @@
 /* declaring css variables, declare them on an element, on root, it's the highest element. The values below are the default values*/
 :root {
-  --background-color: rgb(255, 192, 0);
-  --transform: translateX(0ch);
+  --background-color: #ffc000;
+  --transform: translateX(-40ch);
 }
 
 body {
@@ -10,6 +10,7 @@ body {
 
 img {
   transform: var(--transform);
+  
 }
 h2 {
   text-align: center;
