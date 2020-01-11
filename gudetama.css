@@ -1,4 +1,3 @@
-/* declaring css variables, declare them on an element, on root, it's the highest element. The values below are the default values*/
 :root {
   --background-color: #ffc000;
   --transform: translateX(-40ch);
