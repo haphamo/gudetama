@@ -4,4 +4,4 @@
 
 Using this Gudetama character to demonstrate this.
 
-<p align="center"> <img alt="gudetama" src="gudetama-gif.gif"></p>
+<p align="center"> <img alt="gudetama" src="/public/images/gudetama-gif.gif"></p>
